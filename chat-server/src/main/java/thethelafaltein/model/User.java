@@ -14,12 +14,13 @@ public class User {
 
     }
 
-    public User(long id,String username,String password,LocalDateTime createdAt, LocalDateTime updatedAt){
+    public User(long id,String username,String password,String email,LocalDateTime createdAt, LocalDateTime updatedAt){
         this.id = id;
         this.username = username;
         this.password = password;
         this.createdAt = createdAt;
         this.updatedAt = updatedAt;
+        this.email = email;
     }
 
     public User(String username,String password,LocalDateTime createdAt, LocalDateTime updatedAt){

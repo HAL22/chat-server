@@ -47,6 +47,12 @@ public class Config {
 
             createTable(CREATE_USERS_TABLE,connection,statement);
 
+            Users users= new Users(connection);
+
+            users.insertUser("thethela", "thethela@hotmail.com", "123");
+
+            System.out.println("User hardcoded");
+
         } catch (SQLException e) {
             e.printStackTrace();
         }
